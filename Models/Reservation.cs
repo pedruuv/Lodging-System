@@ -4,6 +4,8 @@ public class Reservation
 {
     public Reservation(int reservedDays)
     {
+        if (reservedDays <= 0)
+            throw new ArgumentException("Reserved days must be greater than 0");
         _reservedDays = reservedDays;
     }
 
@@ -15,14 +17,14 @@ public class Reservation
     {
         if (guests.Count > _suite.Capacity)
         {
-            Console.WriteLine("Too many guests");
+            throw new InvalidOperationException("Too many guests");
         }
         _guests = guests;
     }
 
     public void SignUpSuite(Suite suite)
     {
-        _suite = suite;
+        _suite = suite ?? throw new ArgumentNullException(nameof(suite), "Suite cannot be null");
     }
 
     public int GetGuestCount()
