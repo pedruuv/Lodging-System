@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Sx9F9N2SJkfIqSML5M88j8lMxbeW5tsK9Cxvaq55mm80WLr7DWYLL8umtQbu8TqPpoStfBt8t9gePcy18A2Y4w==",
+  "success": true,
+  "projectFilePath": "/home/pwho/Documents/Projects/dotnet/Lodging System/Lodging System/Lodging System.csproj",
+  "expectedPackageFiles": [
+    "/home/pwho/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}
